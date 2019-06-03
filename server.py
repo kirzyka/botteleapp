@@ -133,5 +133,5 @@ def f(message):
     bot.send_message(message.chat.id, "Привет, {0}".format(message.from_user.first_name))
 
 
-if name == 'main':
+if __name__ == "__main__":
     bot.polling(none_stop=True)
