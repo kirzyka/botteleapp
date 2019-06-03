@@ -1,4 +1,5 @@
-import telebot
+#!/usr/bin/env python
+import telebot 
 from telebot import types
 
 bot= telebot.TeleBot("864277689:AAF12Kz_E-rUrEAy35i6gVKZC1c-nJ-tCUw")
