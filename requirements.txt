@@ -6,7 +6,7 @@ Jinja2==2.8
 MarkupSafe==0.23
 psycopg2==2.7.1
 py-postgresql==1.1.0
-pyTelegramBotAPI==2.6.6
+pyTelegramBotAPI==3.6.6
 pytz==2016.7
 requests==2.21.0
 six==1.10.0
