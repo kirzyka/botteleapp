@@ -17,7 +17,7 @@ def handle_text(message):
     user_markup.row('Обновления', 'Обратная связь')
     bot.send_message(message.from_user.id, 'Выберите пункт меню:', reply_markup=user_markup)
 
-@server.route('/' + token, methods=['POST'])
+@server.route('/' + "864277689:AAF12Kz_E-rUrEAy35i6gVKZC1c-nJ-tCUw", methods=['POST'])
 def get_message():
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
     return "POST", 200
