@@ -21,13 +21,6 @@ def handle_text(message):
 def handle_text(message):
     user_markup = telebot.types.ReplyKeyboardMarkup(True, False)
     user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', '.', '.', '0', '0', '0')
     user_markup.row('0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', '0')
     user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
     bot.send_message(message.from_user.id, 'Поле боя:', reply_markup=user_markup)
