@@ -17,6 +17,21 @@ def handle_text(message):
     user_markup.row('Ещё кнопка 1', 'Ещё кнопка 2')
     bot.send_message(message.from_user.id, 'Выберите пункт меню:', reply_markup=user_markup)
 
+@bot.message_handler(commands=['пкшв'])
+def handle_text(message):
+    user_markup = telebot.types.ReplyKeyboardMarkup(True, False)
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', '.', '.', '0', '0', '0')
+    user_markup.row('0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', '0')
+    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    bot.send_message(message.from_user.id, 'Поле боя:', reply_markup=user_markup)
+
 @server.route('/' + "864277689:AAF12Kz_E-rUrEAy35i6gVKZC1c-nJ-tCUw", methods=['POST'])
 def get_message():
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
