@@ -17,7 +17,7 @@ def handle_text(message):
     user_markup.row('Ещё кнопка 1', 'Ещё кнопка 2')
     bot.send_message(message.from_user.id, 'Выберите пункт меню:', reply_markup=user_markup)
 
-@bot.message_handler(commands=['пкшв'])
+@bot.message_handler(commands=['grid'])
 def handle_text(message):
     user_markup = telebot.types.ReplyKeyboardMarkup(True, False)
     user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
