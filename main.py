@@ -20,9 +20,12 @@ def handle_text(message):
 @bot.message_handler(commands=['grid'])
 def handle_text(message):
     user_markup = telebot.types.ReplyKeyboardMarkup(True, False)
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
-    user_markup.row('0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', '0')
-    user_markup.row('0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('', 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К')
+    user_markup.row('1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
+    user_markup.row('4', '0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', '0')
+    user_markup.row('5', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0')
     bot.send_message(message.from_user.id, 'Поле боя:', reply_markup=user_markup)
 
 @server.route('/' + "864277689:AAF12Kz_E-rUrEAy35i6gVKZC1c-nJ-tCUw", methods=['POST'])
